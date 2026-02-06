@@ -435,3 +435,79 @@ h1, h2, h3, h4, h5, h6 {
 .border-light {
   border-color: rgba(255, 255, 255, 0.2) !important;
 }
+
+/* Additional Projects Accordion Styles */
+.accordion-button {
+  font-weight: 600;
+  padding: 1.25rem;
+  border: 1px solid var(--gray-light);
+  border-radius: var(--border-radius) !important;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: white;
+  color: var(--dark);
+  box-shadow: none;
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+.accordion-button:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.accordion-button::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230d6efd'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230d6efd'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.accordion-body {
+  padding: 1.5rem;
+  border: 1px solid var(--gray-light);
+  border-top: none;
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
+}
+
+.additional-project {
+  transition: var(--transition);
+}
+
+.additional-project:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--box-shadow);
+}
+
+.additional-project h6 {
+  font-size: 0.95rem;
+}
+
+.additional-project p {
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.project-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-links a {
+  font-size: 0.85rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .accordion-button {
+      padding: 1rem;
+      font-size: 0.95rem;
+  }
+  
+  .additional-project {
+      margin-bottom: 0.75rem;
+  }
+}

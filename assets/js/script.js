@@ -173,4 +173,70 @@ function loadExternalContent() {
   console.log('Portfolio loaded successfully');
 }
 
-window.addEventListener('load', loadExternalContent);
+window.addEventListener('load', loadExternalContent)
+
+// Portfolio accordion functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const accordionButton = document.querySelector('#additionalProjects .accordion-button');
+    const accordionBody = document.querySelector('#collapseAdditional');
+    
+    if (accordionButton && accordionBody) {
+        // Track accordion state
+        accordionBody.addEventListener('show.bs.collapse', function() {
+            const icon = accordionButton.querySelector('.mdi');
+            if (icon) {
+                icon.classList.remove('mdi-plus-circle-outline');
+                icon.classList.add('mdi-minus-circle-outline');
+            }
+        });
+        
+        accordionBody.addEventListener('hide.bs.collapse', function() {
+            const icon = accordionButton.querySelector('.mdi');
+            if (icon) {
+                icon.classList.remove('mdi-minus-circle-outline');
+                icon.classList.add('mdi-plus-circle-outline');
+            }
+        });
+    }
+    
+    // Smooth scroll to additional projects when accordion opens
+    const additionalProjects = document.getElementById('additionalProjects');
+    additionalProjects.addEventListener('shown.bs.collapse', function() {
+        setTimeout(() => {
+            additionalProjects.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }, 300);
+    });
+});
+
+// Portfolio accordion functionality
+document.addEventListener('DOMContentLoaded', function() {
+  const accordionButton = document.querySelector('#additionalProjects .accordion-button');
+  const accordionBody = document.querySelector('#collapseAdditional');
+  
+  if (accordionButton && accordionBody) {
+      // Track accordion state
+      accordionBody.addEventListener('show.bs.collapse', function() {
+          const icon = accordionButton.querySelector('.mdi');
+          if (icon) {
+              icon.classList.remove('mdi-plus-circle-outline');
+              icon.classList.add('mdi-minus-circle-outline');
+          }
+      });
+      
+      accordionBody.addEventListener('hide.bs.collapse', function() {
+          const icon = accordionButton.querySelector('.mdi')
+          if (icon) {
+              icon.classList.remove('mdi-minus-circle-outline')
+              icon.classList.add('mdi-plus-circle-outline')
+          }
+      });
+  }
+  
+  // Smooth scroll to additional projects when accordion opens
+  const additionalProjects = document.getElementById('additionalProjects')
+  additionalProjects.addEventListener('shown.bs.collapse', function() {
+      setTimeout(() => {
+          additionalProjects.scrollIntoView({ behavior: 'smooth', block: 'nearest' })
+      }, 300)
+  })
+})
