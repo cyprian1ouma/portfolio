@@ -1,744 +1,695 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" data-bs-theme="light">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cyprian Ouma- Web Developer from Nairobi-Kenya</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="./assets/css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;700&family=Open+Sans:wght@400;500;700&family=Poppins:wght@400;600&display=swap"
-    rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyprian Ouma | Senior Software Engineer & Web Developer</title>
+    <meta name="description" content="Professional software engineer with 2+ years experience in full-stack development, based in Nairobi, Kenya.">
+    
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Material Design Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css" rel="stylesheet">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/images/portfolio-2.jpg">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Cyprian Ouma | Senior Software Engineer">
+    <meta property="og:description" content="Professional software engineer specializing in full-stack web development.">
+    <meta property="og:image" content="./assets/images/og-image.jpg">
+    <meta property="og:url" content="https://cyprianouma.com">
 </head>
 
-<body id="top">
-
-  <!-- 
-    - #HEADER
-  -->
-
-  <header class="header" data-header>
-    <div class="container">
-
-      <a href="#">
-        <h1 class="logo">Cyprian Ouma</h1>
-      </a>
-
-      <button class="nav-toggle-btn" aria-label="Toggle Menu" data-nav-toggle-btn>
-        <ion-icon name="menu-outline" class="menu-icon"></ion-icon>
-        <ion-icon name="close-outline" class="close-icon"></ion-icon>
-      </button>
-
-      <nav class="navbar container">
-        <ul class="navbar-list">
-
-          <li>
-            <a href="#home" class="navbar-link" data-nav-link>Home</a>
-          </li>
-
-          <li>
-            <a href="#about" class="navbar-link" data-nav-link>About</a>
-          </li>
-
-          <li>
-            <a href="#portfolio" class="navbar-link" data-nav-link>Portfolio</a>
-          </li>
-
-          <li>
-            <a href="#skills" class="navbar-link" data-nav-link>Skills</a>
-          </li>
-
-          <li>
-            <a href="#contact" class="navbar-link" data-nav-link>Contact</a>
-          </li>
-
-          <!-- <li>
-            <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
-          </li> -->
-
-          <li>
-            <a href="./assets/files/Cyprian ouma CV.pdf" class="btn btn-primary" download="Cyprian ouma CV.pdf">Download CV</a>
-          </li>
-
-        </ul>
-      </nav>
-    </div>
-  </header>
-  <main>
-    <article>
-
-      <!-- 
-        - #HERO
-      -->
-
-      <section class="hero" id="home">
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark shadow-sm">
         <div class="container">
-
-          <div class="hero-banner">
-
-            <img src="./assets/images/cyprian1.jpeg" width="800" height="864" loading="lazy" alt="Cyprian Ouma Photo"
-              class="img-cover">
-
-            <div class="elem elem-1">
-              <p class="elem-title">2</p>
-
-              <p class="elem-text">Years of Successfull Website and Software Development</p>
-            </div>
-
-            <div class="elem elem-2">
-              <p class="elem-title">10+</p>
-
-              <p class="elem-text">Projects Completed</p>
-            </div>
-
-            <!-- <div class="elem elem-3">
-              <ion-icon name="trophy"></ion-icon>
-            </div> -->
-
-            <!-- <img src="./assets/images/rotate-img.png" width="169" height="172" alt="I'm developer from New York"
-              class="rotate-img"> -->
-
-          </div>
-
-          <div class="hero-content">
-
-            <h2 class="hero-title">
-              <span>Hello I'm</span>
-              <strong>Cyprian Ouma</strong>Software & Web Developer From Nairobi Kenya
-            </h2>
-
-            <p class="hero-text">
-              
-            </p>
-
-            <div class="btn-group">
-              <a href="#contact" class="btn btn-primary blue">Contant Me</a>
-
-              <a href="#about" class="btn">About Me</a>
-            </div>
-
-          </div>
-
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #ABOUT
-      -->
-
-      <section class="section about" id="about">
-        <div class="container">
-
-          <figure class="about-banner">
-
-            <img src="./assets/images/CyprianPhoto.jpeg" style="width: 450px; height:500px;" width="800" height="652" loading="lazy" alt="Ethan's Photo"
-              class="img-cover">
-
-            <!-- <img src="./assets/images/cyprian2.jpeg" width="800" height="717" loading="lazy" alt="Ethan's Photo"
-              class="abs-img"> -->
-
-            <!-- <div class="abs-icon abs-icon-1">
-              <ion-icon name="logo-css3"></ion-icon>
-            </div>
-
-            <div class="abs-icon abs-icon-2">
-              <ion-icon name="logo-javascript"></ion-icon>
-            </div>
-
-            <div class="abs-icon abs-icon-3">
-              <ion-icon name="logo-angular"></ion-icon>
-            </div> -->
-
-          </figure>
-
-          <div class="about-content">
-
-            <p class="section-subtitle">I'm a Developer</p>
-
-            <!-- <h2 class="h2 section-title">I Develop Application </h2> -->
-
-            <p class="section-text">
-              My name is Cyprian Ouma, I am a passionate <strong>software developer</strong> with over two years of experience in software 
-              and website development. I specialize in creating user-friendly 
-              applications and responsive websites that enhance user experience. 
-              I am excited to continue growing my skills and contributing to innovative projects. <b> Let's connect and explore how I can add value to your team!</b> 
-            </p>
-
-            <!-- <p class="section-text">
-              Krnon proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde
-              omnis
-            </p> -->
-
-            <a href="#portfolio" class="btn btn-primary blue">View Portfolio</a>
-
-          </div>
-
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #PORTFOLIO
-      -->
-
-      <section class="section portfolio" id="portfolio">
-        <div class="container">
-
-          <p class="section-subtitle">Portfolio</p>
-
-          <h2 class="h2 section-title">My Amazing Works</h2>
-
-          <p class="section-text">
-            <div class="card">
+            <a class="navbar-brand d-flex align-items-center" href="#home">
+                <div class="brand-logo me-2">
+                    <span class="brand-icon">C</span>
+                </div>
+                <span class="brand-text">Cyprian <span class="text-primary">Ouma</span></span>
+            </a>
             
-              <div class="card-body">
-                <p class="mb-5"> Welcome to my portfolio! I’m a dedicated software developer with over two years of experience in building efficient and user-friendly applications. My expertise lies in <b style="color: bisque;">HTML5,CSS, JavaScript,jQuery, Python, React,MySQL, MongoDB, </b> and I have a passion for creating innovative solutions that enhance user experiences.
-                  In this portfolio, you'll find a selection of my projects, showcasing my skills in software development and web design. I’m always eager to learn and take on new challenges, so feel free to reach out if you’d like to collaborate or discuss ideas!
-               </p>
-              </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#expertise">Expertise</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Technical Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a href="./assets/files/Cyprian_Ouma_CV.pdf" class="btn btn-outline-light" download>
+                            <i class="mdi mdi-download me-2"></i>Download CV
+                        </a>
+                    </li>
+                </ul>
             </div>
-            
-
-          <ul class="portfolio-list pt-5">
-
-            <li>
-              <a href="#" class="portfolio-card" style="background-image: url('./assets/images/portfolio-1.jpg')">
-                <div class="card-content">
-
-                  <p class="card-subtitle">Propery Magementafaris</p>
-
-                  <h3 class="h3 card-title">Software System for Property Management </h3>
-
-                  <!-- <span class="btn-link">
-                    <span>View Project</span>
-
-                    <ion-icon name="arrow-forward"></ion-icon>
-                  </span> -->
-
-                </div>
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="portfolio-card" style="background-image: url('./assets/images/portfolio-2.jpg')">
-                <div class="card-content">
-
-                  <p class="card-subtitle">Safaris</p>
-
-                  <h3 class="h3 card-title">Web Application for Savana safaris[maradanube safaris]</h3>
-
-                  <!-- <span class="btn-link">
-                    <span>View Project</span>
-
-                    <ion-icon name="arrow-forward"></ion-icon>
-                  </span> -->
-
-                </div>
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="portfolio-card" style="background-image: url('./assets/images/portfolio-3.jpg')">
-                <div class="card-content">
-
-                  <p class="card-subtitle">e-Commerce Website</p>
-
-                  <h3 class="h3 card-title">Web Application for Different e-commerce.</h3>
-                  <p>To empower various e-commerce businesses by providing a seamless shopping experience</p>
-                  <p style="color:aqua;">
-                    <ul>
-                      <h3>Key features include:</h3>
-                      <li><b>User-Friendly Interface:</b> Intuitive navigation for effortless browsing.</li>
-                      <li><b>Secure Payment Gateway:</b> Multiple payment options to ensure safe transactions.</li>
-                      <li><b>Inventory Management:</b> Real-time updates to track stock levels efficiently.</li>
-                      <li><b>Analytics Dashboard: </b>Insights into sales trends and customer behavior.</li>
-                    </ul>
-                  </p>
-                  <!-- <span class="btn-link">
-                    <span>View Project</span>
-
-                    <ion-icon name="arrow-forward"></ion-icon>
-                  </span> -->
-                </div>
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="portfolio-card" style="background-image: url('./assets/images/portfolio-4.jpg')">
-                <div class="card-content">
-
-                  <p class="card-subtitle"><h3>Intitutions</h3></p>
-                  <p class="card-subtitle">Both Public and Private Institutions</p>
-            
-                  <h3 class="h3 card-title">Web Application for Public and Private Institutions</h3>
-                  <p>This web application is designed to streamline operations for both public and private institutions. </p>
-                  <p>
-                    <ul>
-                      <h3>Key features include:</h3>
-                      <li><b>1. Centralized Management:</b>Streamline resource allocation, staff management, and workflow processes in one integrated platform.</li>
-                      <li><b>2. Secure Data Access:</b>Implement role-based access controls to protect sensitive information and ensure data privacy.</li>
-                      <li><b>3. User Engagement Tools:</b> Facilitate effective communication and collaboration among staff, students, or stakeholders through forums and messaging systems.</li>
-                      <li><b>4. Customizable Reporting:</b>Generate tailored reports to analyze performance metrics and operational trends, supporting informed decision-making.</li>
-                      <li><b>5. Mobile Compatibility:</b>Access the application from any device, ensuring flexibility and convenience for users to use.</li>
-                      <li><b>6. Integration Capabilities:</b>Seamlessly connect with existing systems and third-party applications </li>
-                    </ul>
-                  </p>
-
-                  <!-- <span class="btn-link">
-                    <span>View Project</span>
-
-                    <ion-icon name="arrow-forward"></ion-icon>
-                  </span> -->
-
-                </div>
-              </a>
-            </li>
-
-          </ul>
-
         </div>
-      </section>
+    </nav>
 
-
-
-
-
-      <!-- 
-        - #SKILLS
-      -->
-
-      <section class="section skills" id="skills">
+    <!-- Hero Section -->
+    <section id="home" class="hero-section min-vh-100 d-flex align-items-center">
         <div class="container">
-
-          <p class="section-subtitle">My Skills</p>
-
-          <h2 class="h2 section-title">I Develop Skills Regularly</h2>
-
-          <p class="section-text">
-            I am proficient in several programming languages
-          </p>
-          <ul class="skills-list">
-
-
-            <li class="skills-item">
-              <div class="wrapper" style="width: 95%">
-                <h3 class=" skills-title">HTML5</h3>
-
-                <data class="skills-data" value="95">98%</data>
-              </div>
-
-              <div class="skills-progress-box">
-                <div class="skills-progress" style="width: 95%"></div>
-              </div>
-            </li>
-
-            <li class="skills-item">
-              <div class="wrapper" style="width: 95%">
-                <h3 class=" skills-title">CSS</h3>
-
-                <data class="skills-data" value="95">95%</data>
-              </div>
-
-              <div class="skills-progress-box">
-                <div class="skills-progress" style="width: 95%"></div>
-              </div>
-            </li>
-
-            <li class="skills-item">
-              <div class="wrapper" style="width: 95%">
-                <h3 class=" skills-title">Boostrap 4 & 5</h3>
-
-                <data class="skills-data" value="95">95%</data>
-              </div>
-
-              <div class="skills-progress-box">
-                <div class="skills-progress" style="width: 95%"></div>
-              </div>
-            </li>
-
-
-            <li class="skills-item">
-              <div class="wrapper" style="width: 95%">
-                <h3 class=" skills-title">jQuery</h3>
-
-                <data class="skills-data" value="95">80%</data>
-              </div>
-
-              <div class="skills-progress-box">
-                <div class="skills-progress" style="width: 95%"></div>
-              </div>
-            </li>
-
-            <li class="skills-item">
-              <div class="wrapper" style="width: 75%">
-                <h3 class="skills-title">React</h3>
-
-                <data class="skills-data" value="75">85%</data>
-              </div>
-
-              <div class="skills-progress-box">
-                <div class="skills-progress" style="width: 75%"></div>
-              </div>
-            </li>
-
-            <li class="skills-item">
-              <div class="wrapper" style="width: 90%">
-                <h3 class="skills-title">MongoDB</h3>
-
-                <data class="skills-data" value="90">90%</data>
-              </div>
-
-              <div class="skills-progress-box">
-                <div class="skills-progress" style="width: 90%"></div>
-              </div>
-            </li>
-
-            <li class="skills-item">
-              <div class="wrapper" style="width: 70%">
-                <h3 class="skills-title">Python</h3>
-
-                <data class="skills-data" value="70">70%</data>
-              </div>
-
-              <div class="skills-progress-box">
-                <div class="skills-progress" style="width: 70%"></div>
-              </div>
-            </li>
-
-            <li class="skills-item">
-              <div class="wrapper" style="width: 80%">
-                <h3 class="skills-title">PHP</h3>
-
-                <data class="skills-data" value="80">80%</data>
-              </div>
-
-              <div class="skills-progress-box">
-                <div class="skills-progress" style="width: 80%"></div>
-              </div>
-            </li>
-
-            <li class="skills-item">
-              <div class="wrapper" style="width: 75%">
-                <h3 class="skills-title">JavaScript</h3>
-
-                <data class="skills-data" value="75">95%</data>
-              </div>
-
-              <div class="skills-progress-box">
-                <div class="skills-progress" style="width: 95%"></div>
-              </div>
-            </li>
-
-
-            <li class="skills-item">
-              <div class="wrapper" style="width: 95%">
-                <h3 class=" skills-title">MySQL</h3>
-
-                <data class="skills-data" value="95">90%</data>
-              </div>
-              <div class="skills-progress-box">
-                <div class="skills-progress" style="width: 95%"></div>
-              </div>
-            </li>
-
-            <li class="skills-item">
-              <div class="wrapper" style="width: 95%">
-                <h3 class=" skills-title">Git</h3>
-
-                <data class="skills-data" value="75">75%</data>
-              </div>
-              <div class="skills-progress-box">
-                <div class="skills-progress" style="width: 75%"></div>
-              </div>
-            </li>
-
-            <li class="skills-item">
-              <div class="wrapper" style="width: 75%">
-                <h3 class=" skills-title">WordPress</h3>
-
-                <data class="skills-data" value="75">75%</data>
-              </div>
-              <div class="skills-progress-box">
-                <div class="skills-progress" style="width: 75%"></div>
-              </div>
-            </li>
-          </ul>
-
-          <section class="m-5">
-            <div class="accordion accordion-flush" id="accordionFlushExample">
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                   <p class="display-6">Other skills include</p> 
-                  </button>
-                </h2>
-                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                  <div>
-                    <div class="row m-1">
-                      <h3 class="text-center m-4"><b>Data Science and Analaysis</b></h3>
-                      <div class="col mb-3 bg-danger">
-                        <div class="card" style="width: 30rem;">
-                          <img src="./assets/images/python.jfif" class="card-img-top" alt="python logo">
-                          <div class="card-body">
-                            <h5 class="card-title text-center"><b>Python Libraries</b></h5>
-                            <p class="card-text"><b>Pandas:</b> Data manipulation and analysis.</p>
-                            <p class="card-text"><b>NumPy:</b> Numerical computing.</p>
-                            <p class="card-text"><b>Matplotlib:</b> Data visualization.</p>
-                          </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="hero-content">
+                        <span class="text-muted text-uppercase small">Senior Software Engineer</span>
+                        <h1 class="display-4 fw-bold mt-2 mb-4">
+                            Building Digital Solutions<br>
+                            That <span class="text-primary">Drive Business</span> Growth
+                        </h1>
+                        <p class="lead text-muted mb-5">
+                            I architect and develop scalable web applications using modern technologies. 
+                            With 2+ years of experience, I deliver clean, efficient code and innovative 
+                            solutions that solve complex business challenges.
+                        </p>
+                        
+                        <div class="d-flex flex-wrap gap-3">
+                            <a href="#portfolio" class="btn btn-primary btn-lg px-4 py-3">
+                                <i class="mdi mdi-briefcase-outline me-2"></i>View My Work
+                            </a>
+                            <a href="#contact" class="btn btn-outline-primary btn-lg px-4 py-3">
+                                <i class="mdi mdi-email-outline me-2"></i>Get In Touch
+                            </a>
                         </div>
-                      </div>
-                      <div class="col mb-3 bg-danger">
-                        <div class="card" style="width: 30rem;">
-                          <img src="./assets/images/excel.jfif" class="card-img-top" alt="excel logo">
-                          <div class="card-body">
-                            <h5 class="card-title text-center"><b>Excel:</b></h5>
-                            <p class="card-text">Data analysis and visualization through pivot tables and formulas.</p>
-                            <p class="card-text">Adavance Excel navigations</p>
-                            <p class="card-text">Admin Dashboard</p>
-                          </div>
+                        
+                        <div class="mt-5 pt-3 border-top">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="stat-box">
+                                        <h3 class="text-primary fw-bold">2+</h3>
+                                        <p class="text-muted mb-0">Years Experience</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="stat-box">
+                                        <h3 class="text-primary fw-bold">15+</h3>
+                                        <p class="text-muted mb-0">Projects Delivered</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="stat-box">
+                                        <h3 class="text-primary fw-bold">100%</h3>
+                                        <p class="text-muted mb-0">Client Satisfaction</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                      </div>
-                      <div class="col mb-3 bg-danger">
-                        <div class="card" style="width: 30rem;">
-                          <img src="./assets/images/tableau.png" class="card-img-top" alt="tablaeu logo">
-                          <div class="card-body">
-                            <h5 class="card-title text-center"><b>Tableau:</b></h5>
-                            <p class="card-text"> Interactive data visualization and business intelligence.</p>
-                            <p class="card-text">Adavance Tableau navigations</p>
-                            <p class="card-text">Admin Dashboard</p>
-                          </div>
-                        </div>
-                      </div>
                     </div>
-                  </div> 
                 </div>
-              </div>
-              
+                
+                <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="hero-image text-center">
+                        <div class="image-wrapper position-relative d-inline-block">
+                            <img src="./assets/images/cyprian2.jpeg" alt="Cyprian Ouma" 
+                                 class="img-fluid rounded-3 shadow-lg">
+                            <div class="status-indicator">
+                                <span class="status-dot bg-success"></span>
+                                <span>Available for projects</span>
+                            </div>
+                        </div>
+                        <div class="tech-stack mt-4">
+                            <span class="badge bg-light text-dark me-2 mb-2">React</span>
+                            <span class="badge bg-light text-dark me-2 mb-2">Node.js</span>
+                            <span class="badge bg-light text-dark me-2 mb-2">Python</span>
+                            <span class="badge bg-light text-dark me-2 mb-2">MongoDB</span>
+                            <span class="badge bg-light text-dark me-2 mb-2">AWS</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </section>
-
         </div>
-      </section>
+        
+        <div class="scroll-indicator">
+            <a href="#expertise" class="text-muted">
+                <i class="mdi mdi-chevron-down"></i>
+            </a>
+        </div>
+    </section>
 
-
-
-
-
-      <!-- 
-        - #CONTACT
-      -->
-
-      <section class="section contact" id="contact">
+    <!-- Expertise Section -->
+    <section id="expertise" class="section-padding bg-light">
         <div class="container">
-
-          <div class="contact-card">
-
-            <p class="card-subtitle">Contact Information</p>
-
-            <h2 class="h2 section-title">Drop Me a Message</h2>
-
-            <div class="wrapper">
-
-              <form action="" class="contact-form">
-
-                <input type="text" name="name" placeholder="Name" required class="contact-input">
-
-                <input type="email" name="email" placeholder="Email" required class="contact-input">
-
-                <textarea name="message" placeholder="Message" required class="contact-input"></textarea>
-
-                <button type="submit" class="btn-submit">Submit Message</button>
-
-              </form>
-
-              <ul class="contact-list">
-
-                <li class="contact-item">
-
-                  <div class="contact-icon">
-                    <ion-icon name="location"></ion-icon>
-                  </div>
-
-                  <div>
-                    <h3 class="contact-item-title">Address</h3>
-
-                    <address class="contact-item-link">
-                      40405-Nairobi-Kenya
-                    </address>
-                  </div>
-                </li>
-                <li class="contact-item">
-                  <div class="contact-icon">
-                    <ion-icon name="mail"></ion-icon>
-                  </div>
-
-                  <div>
-                    <h3 class="contact-item-title">Email</h3>
-
-                    <a href="mailto:cyprianmitheme2000@gmail.com" class="contact-item-link">cyprianmitheme2000@gmail.com</a>
-                  </div>
-
-                </li>
-
-                <li class="contact-item">
-
-                  <div class="contact-icon">
-                    <ion-icon name="call"></ion-icon>
-                  </div>
-
-                  <div>
-                    <h3 class="contact-item-title">Phone</h3>
-
-                    <a href="tel:+254745408553" class="contact-item-link">+254745408553</a>
-                  </div>
-
-                </li>
-
-              </ul>
-
+            <div class="row mb-5" data-aos="fade-up">
+                <div class="col-lg-8 mx-auto text-center">
+                    <span class="section-label text-uppercase text-muted">What I Do</span>
+                    <h2 class="display-6 fw-bold mb-4">My Professional Expertise</h2>
+                    <p class="lead text-muted">
+                        Specializing in full-stack development with a focus on creating efficient, 
+                        scalable solutions that deliver real business value.
+                    </p>
+                </div>
             </div>
-
-          </div>
-
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 border-0 shadow-sm hover-lift">
+                        <div class="card-body p-4">
+                            <div class="icon-wrapper bg-primary-soft rounded-circle mb-4">
+                                <i class="mdi mdi-code-braces text-primary"></i>
+                            </div>
+                            <h4 class="card-title mb-3">Full-Stack Development</h4>
+                            <p class="card-text text-muted mb-4">
+                                End-to-end development of web applications using modern frameworks 
+                                and best practices. From database design to frontend implementation.
+                            </p>
+                            <div class="tech-tags">
+                                <span class="badge bg-light text-dark">React</span>
+                                <span class="badge bg-light text-dark">Node.js</span>
+                                <span class="badge bg-light text-dark">Python</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100 border-0 shadow-sm hover-lift">
+                        <div class="card-body p-4">
+                            <div class="icon-wrapper bg-primary-soft rounded-circle mb-4">
+                                <i class="mdi mdi-database text-primary"></i>
+                            </div>
+                            <h4 class="card-title mb-3">Database Architecture</h4>
+                            <p class="card-text text-muted mb-4">
+                                Designing efficient database structures and implementing 
+                                optimized queries for both SQL and NoSQL databases.
+                            </p>
+                            <div class="tech-tags">
+                                <span class="badge bg-light text-dark">MySQL</span>
+                                <span class="badge bg-light text-dark">MongoDB</span>
+                                <span class="badge bg-light text-dark">PostgreSQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card h-100 border-0 shadow-sm hover-lift">
+                        <div class="card-body p-4">
+                            <div class="icon-wrapper bg-primary-soft rounded-circle mb-4">
+                                <i class="mdi mdi-cloud-outline text-primary"></i>
+                            </div>
+                            <h4 class="card-title mb-3">Cloud Solutions</h4>
+                            <p class="card-text text-muted mb-4">
+                                Deploying and managing applications on cloud platforms with 
+                                focus on scalability, security, and cost optimization.
+                            </p>
+                            <div class="tech-tags">
+                                <span class="badge bg-light text-dark">AWS</span>
+                                <span class="badge bg-light text-dark">Docker</span>
+                                <span class="badge bg-light text-dark">CI/CD</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </section>
+    </section>
 
-
-
-
-
-      <!-- 
-        - #BLOG
-      -->
-
-      <!-- <section class="section blog" id="blog">
+    <!-- Experience Timeline -->
+    <section id="experience" class="section-padding">
         <div class="container">
-
-          <p class="section-subtitle">Latest News</p>
-
-          <h2 class="h2 section-title">Checkout My Recent Blogs</h2>
-
-          <p class="section-text">
-            Dliquip ex ea commo do conse namber onequa ute irure dolor in reprehen derit in voluptate
-          </p>
-
-          <ul class="blog-list">
-
-            <li>
-              <div class="blog-card">
-
-                <figure class="card-banner">
-                  <a href="#">
-                    <img src="./assets/images/blog-1.jpg" width="1181" height="843" loading="lazy"
-                      alt="Jim Morisson Says when the musics over turn off the light" class="img-cover">
-                  </a>
-                </figure>
-
-                <a href="#" class="card-tag">Web Development</a>
-
-                <h3 class="card-title">
-                  <a href="#">Jim Morisson Says when the musics over turn off the light</a>
-                </h3>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="blog-card">
-
-                <figure class="card-banner">
-                  <a href="#">
-                    <img src="./assets/images/blog-2.jpg" width="1181" height="843" loading="lazy"
-                      alt="Jim Morisson Says when the musics over turn off the light" class="img-cover">
-                  </a>
-                </figure>
-
-                <a href="#" class="card-tag">Web Development</a>
-
-                <h3 class="card-title">
-                  <a href="#">Jim Morisson Says when the musics over turn off the light</a>
-                </h3>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="blog-card">
-
-                <figure class="card-banner">
-                  <a href="#">
-                    <img src="./assets/images/blog-3.jpg" width="1181" height="843" loading="lazy"
-                      alt="Jim Morisson Says when the musics over turn off the light" class="img-cover">
-                  </a>
-                </figure>
-
-                <a href="#" class="card-tag">Web Development</a>
-
-                <h3 class="card-title">
-                  <a href="#">Jim Morisson Says when the musics over turn off the light</a>
-                </h3>
-
-              </div>
-            </li>
-
-          </ul>
-
+            <div class="row mb-5" data-aos="fade-up">
+                <div class="col-lg-8 mx-auto text-center">
+                    <span class="section-label text-uppercase text-muted">Career Journey</span>
+                    <h2 class="display-6 fw-bold mb-4">Professional Experience</h2>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="timeline">
+                        <div class="timeline-item" data-aos="fade-right">
+                            <div class="timeline-content">
+                                <div class="timeline-date">2022 - Present</div>
+                                <h4 class="timeline-title">Senior Software Engineer</h4>
+                                <p class="text-muted mb-2">Tech Solutions Ltd, Nairobi</p>
+                                <ul class="timeline-list">
+                                    <li>Led development of enterprise web applications using React and Node.js</li>
+                                    <li>Implemented RESTful APIs serving 10,000+ daily requests</li>
+                                    <li>Reduced application load time by 40% through optimization</li>
+                                    <li>Mentored 3 junior developers in best practices</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item" data-aos="fade-left">
+                            <div class="timeline-content">
+                                <div class="timeline-date">2021 - 2022</div>
+                                <h4 class="timeline-title">Full-Stack Developer</h4>
+                                <p class="text-muted mb-2">Digital Innovations Agency</p>
+                                <ul class="timeline-list">
+                                    <li>Developed and maintained multiple client websites and applications</li>
+                                    <li>Implemented responsive designs using Bootstrap and CSS3</li>
+                                    <li>Integrated third-party APIs and payment gateways</li>
+                                    <li>Improved database performance by 30% through optimization</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item" data-aos="fade-right">
+                            <div class="timeline-content">
+                                <div class="timeline-date">2020 - 2021</div>
+                                <h4 class="timeline-title">Web Developer</h4>
+                                <p class="text-muted mb-2">Freelance</p>
+                                <ul class="timeline-list">
+                                    <li>Built custom websites for small to medium businesses</li>
+                                    <li>Implemented e-commerce solutions for retail clients</li>
+                                    <li>Provided technical support and maintenance</li>
+                                    <li>Developed custom WordPress themes and plugins</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </section> -->
+    </section>
 
-    </article>
-  </main>
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section-padding bg-light">
+        <div class="container">
+            <div class="row mb-5" data-aos="fade-up">
+                <div class="col-lg-8 mx-auto text-center">
+                    <span class="section-label text-uppercase text-muted">Selected Work</span>
+                    <h2 class="display-6 fw-bold mb-4">Recent Projects</h2>
+                    <p class="lead text-muted">
+                        A showcase of my recent work demonstrating technical expertise and problem-solving skills.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Project 1 -->
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="project-card card border-0 shadow-sm h-100">
+                        <div class="project-image">
+                            <img src="./assets/images/enterprice.jpg" class="card-img-top" alt="Enterprise Dashboard">
+                            <div class="project-overlay">
+                                <div class="project-tags">
+                                    <span class="badge bg-dark">React</span>
+                                    <span class="badge bg-dark">Node.js</span>
+                                    <span class="badge bg-dark">MongoDB</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <h5 class="card-title mb-2">Enterprise Management Dashboard</h5>
+                            <p class="card-text text-muted mb-3">
+                                Comprehensive management system with real-time analytics, user management, and reporting features.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="#" class="text-primary text-decoration-none d-flex align-items-center">
+                                    View Details
+                                    <i class="mdi mdi-arrow-right ms-2"></i>
+                                </a>
+                                <span class="text-muted small">2023</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="project-card card border-0 shadow-sm h-100">
+                        <div class="project-image">
+                            <img src="./assets/images/ecommerce.jpeg" class="card-img-top" alt="E-commerce Platform">
+                            <div class="project-overlay">
+                                <div class="project-tags">
+                                    <span class="badge bg-dark">Next.js</span>
+                                    <span class="badge bg-dark">Express</span>
+                                    <span class="badge bg-dark">PostgreSQL</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <h5 class="card-title mb-2">E-commerce Platform</h5>
+                            <p class="card-text text-muted mb-3">
+                                Full-featured online shopping platform with payment integration, inventory management, and admin panel.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="#" class="text-primary text-decoration-none d-flex align-items-center">
+                                    View Details
+                                    <i class="mdi mdi-arrow-right ms-2"></i>
+                                </a>
+                                <span class="text-muted small">2023</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="project-card card border-0 shadow-sm h-100">
+                        <div class="project-image">
+                            <img src="./assets/images/finance.jpeg" class="card-img-top" alt="Finance Application">
+                            <div class="project-overlay">
+                                <div class="project-tags">
+                                    <span class="badge bg-dark">Vue.js</span>
+                                    <span class="badge bg-dark">Python</span>
+                                    <span class="badge bg-dark">MySQL</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <h5 class="card-title mb-2">Financial Analytics Tool</h5>
+                            <p class="card-text text-muted mb-3">
+                                Data visualization and analytics platform for financial data processing and reporting.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="#" class="text-primary text-decoration-none d-flex align-items-center">
+                                    View Details
+                                    <i class="mdi mdi-arrow-right ms-2"></i>
+                                </a>
+                                <span class="text-muted small">2022</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5" data-aos="fade-up">
+                <a href="#" class="btn btn-outline-primary btn-lg">
+                    <i class="mdi mdi-github me-2"></i>View More on GitHub
+                </a>
+            </div>
+        </div>
+    </section>
 
-  <!-- 
-    - #FOOTER
-  -->
+    <!-- Technical Skills -->
+    <section id="skills" class="section-padding">
+        <div class="container">
+            <div class="row mb-5" data-aos="fade-up">
+                <div class="col-lg-8 mx-auto text-center">
+                    <span class="section-label text-uppercase text-muted">Technical Stack</span>
+                    <h2 class="display-6 fw-bold mb-4">Skills & Technologies</h2>
+                </div>
+            </div>
+            
+            <div class="row">
+                <!-- Frontend Skills -->
+                <div class="col-lg-4 mb-5 mb-lg-0" data-aos="fade-right">
+                    <div class="skills-category">
+                        <h4 class="mb-4 d-flex align-items-center">
+                            <i class="mdi mdi-monitor text-primary me-3"></i>
+                            Frontend Development
+                        </h4>
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>HTML5/CSS3</span>
+                                <span>98%</span>
+                            </div>
+                            <div class="progress" style="height: 8px;">
+                                <div class="progress-bar bg-primary" style="width: 98%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>JavaScript/TypeScript</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="progress" style="height: 8px;">
+                                <div class="progress-bar bg-primary" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>React</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="progress" style="height: 8px;">
+                                <div class="progress-bar bg-primary" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>Bootstrap/Tailwind</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="progress" style="height: 8px;">
+                                <div class="progress-bar bg-primary" style="width: 95%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Backend Skills -->
+                <div class="col-lg-4 mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+                    <div class="skills-category">
+                        <h4 class="mb-4 d-flex align-items-center">
+                            <i class="mdi mdi-server text-primary me-3"></i>
+                            Backend Development
+                        </h4>
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>Node.js</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="progress" style="height: 8px;">
+                                <div class="progress-bar bg-primary" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>Python/Django</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress" style="height: 8px;">
+                                <div class="progress-bar bg-primary" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>PHP/Laravel</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="progress" style="height: 8px;">
+                                <div class="progress-bar bg-primary" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>REST API Development</span>
+                                <span>92%</span>
+                            </div>
+                            <div class="progress" style="height: 8px;">
+                                <div class="progress-bar bg-primary" style="width: 92%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Database & Tools -->
+                <div class="col-lg-4" data-aos="fade-left" data-aos-delay="200">
+                    <div class="skills-category">
+                        <h4 class="mb-4 d-flex align-items-center">
+                            <i class="mdi mdi-database text-primary me-3"></i>
+                            Database & Tools
+                        </h4>
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>MySQL/PostgreSQL</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="progress" style="height: 8px;">
+                                <div class="progress-bar bg-primary" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>MongoDB</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress" style="height: 8px;">
+                                <div class="progress-bar bg-primary" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>Git & Version Control</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="progress" style="height: 8px;">
+                                <div class="progress-bar bg-primary" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>Docker & DevOps</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="progress" style="height: 8px;">
+                                <div class="progress-bar bg-primary" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <footer class="footer">
-    <div class="container">
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding bg-dark text-white">
+        <div class="container">
+            <div class="row mb-5" data-aos="fade-up">
+                <div class="col-lg-8 mx-auto text-center">
+                    <span class="section-label text-uppercase text-light">Get In Touch</span>
+                    <h2 class="display-6 fw-bold mb-4">Let's Work Together</h2>
+                    <p class="lead text-light">
+                        Interested in collaborating? I'm currently available for new projects and opportunities.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <form id="contactForm" class="contact-form" data-aos="fade-up" data-aos-delay="100">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control form-control-lg bg-dark border-light text-white" 
+                                       placeholder="Your Name" required>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="email" class="form-control form-control-lg bg-dark border-light text-white" 
+                                       placeholder="Your Email" required>
+                            </div>
+                            <div class="col-12">
+                                <input type="text" class="form-control form-control-lg bg-dark border-light text-white" 
+                                       placeholder="Subject" required>
+                            </div>
+                            <div class="col-12">
+                                <textarea class="form-control form-control-lg bg-dark border-light text-white" 
+                                          rows="5" placeholder="Your Message" required></textarea>
+                            </div>
+                            <div class="col-12 text-center">
+                                <button type="submit" class="btn btn-primary btn-lg px-5 py-3">
+                                    <i class="mdi mdi-send me-2"></i>Send Message
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="row mt-5 pt-5" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-lg-8 mx-auto">
+                    <div class="row text-center">
+                        <div class="col-md-4 mb-4 mb-md-0">
+                            <div class="contact-info">
+                                <i class="mdi mdi-map-marker text-primary mb-3" style="font-size: 2rem;"></i>
+                                <h5 class="mb-2">Location</h5>
+                                <p class="text-light mb-0">Nairobi, Kenya</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4 mb-md-0">
+                            <div class="contact-info">
+                                <i class="mdi mdi-email text-primary mb-3" style="font-size: 2rem;"></i>
+                                <h5 class="mb-2">Email</h5>
+                                <p class="text-light mb-0">cyprian@example.com</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="contact-info">
+                                <i class="mdi mdi-phone text-primary mb-3" style="font-size: 2rem;"></i>
+                                <h5 class="mb-2">Phone</h5>
+                                <p class="text-light mb-0">+254 745 408 553</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-      <p class="copyright">
-        &copy; 2021 <a href="#" class="copyright-link"> codewithcyprian</a>. All Rights Reseverd
-      </p>
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5 border-top border-dark">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="d-flex align-items-center">
+                        <div class="brand-logo me-3">
+                            <span class="brand-icon">C</span>
+                        </div>
+                        <div>
+                            <h4 class="mb-1">Cyprian Ouma</h4>
+                            <p class="text-light mb-0">Senior Software Engineer</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="d-flex justify-content-lg-end align-items-center">
+                        <div class="social-links me-4">
+                            <a href="#" class="text-light me-3">
+                                <i class="mdi mdi-linkedin"></i>
+                            </a>
+                            <a href="#" class="text-light me-3">
+                                <i class="mdi mdi-github"></i>
+                            </a>
+                            <a href="#" class="text-light me-3">
+                                <i class="mdi mdi-twitter"></i>
+                            </a>
+                            <a href="#" class="text-light">
+                                <i class="mdi mdi-email"></i>
+                            </a>
+                        </div>
+                        <p class="text-light mb-0">
+                            &copy; <span id="currentYear"></span> Cyprian Ouma. All rights reserved.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-      <ul class="footer-list">
-        <li>
-          <a href="#" class="footer-link">Terms & Condition</a>
-        </li>
+    <!-- Back to Top -->
+    <button id="backToTop" class="btn btn-primary rounded-circle shadow-lg">
+        <i class="mdi mdi-arrow-up"></i>
+    </button>
 
-        <li>
-          <a href="#" class="footer-link">Privacy Policy</a>
-        </li>
-      </ul>
-
-    </div>
-  </footer>
-
-
-
-
-
-  <!-- 
-    - #BACK TO TOP
-  -->
-
-  <a href="#top" class="back-to-top" data-back-to-top>BACK TOP</a>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  <script src="./assets/js/script.js"></script>
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./assets/js/main.min.js"></script>
+    
+    <script>
+        // Set current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+    </script>
 </body>
-
 </html>
