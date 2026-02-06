@@ -511,3 +511,84 @@ h1, h2, h3, h4, h5, h6 {
       margin-bottom: 0.75rem;
   }
 }
+
+/* Education Section Styles */
+.education-card {
+  transition: var(--transition);
+}
+
+.education-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.certification-item {
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+}
+
+.certification-item:hover {
+  background-color: rgba(13, 110, 253, 0.05);
+}
+
+.learning-item {
+  transition: var(--transition);
+  border-radius: var(--border-radius);
+}
+
+.learning-item:hover {
+  background-color: rgba(13, 110, 253, 0.05);
+  transform: translateY(-3px);
+}
+
+.coursework-tags .badge {
+  font-weight: 500;
+  padding: 0.4rem 0.8rem;
+}
+
+/* Timeline adjustments for education */
+.timeline-item .achievements .badge {
+  font-weight: 500;
+  font-size: 0.85rem;
+}
+
+/* University logo */
+.university-logo {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(13, 110, 253, 0.1);
+  border-radius: 50%;
+}
+
+/* Certification badges */
+.cert-badge {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cert-badge img {
+  max-width: 30px;
+  max-height: 30px;
+}
+
+/* Education icons */
+.edu-icon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(13, 110, 253, 0.1);
+  border-radius: 12px;
+}
